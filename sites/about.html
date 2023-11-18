@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sites/styles/styles.css"> <!-- Link to your CSS file -->
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li> <!-- Link back to the Home page -->
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="about">
+        <section class="author-card">
+            <img src="../images/author1.jpg" alt="Author 1" class="responsive-image" data-src="../images/author1.jpg">
+            <div class="author-info">
+                <h2>Marko Gluhak</h2>
+                <p>Marko Gluhak, a legendary figure in motorcycling, never takes off his red and black business suit and helmet, creating a mysterious yet iconic image. With a Moto Guzzi V85 TT Nero Etna, he embarks on audacious adventures, from the winding Dolomites to deserts and coastal highways. His suit signifies a unique blend of adventure and the corporate world, a symbol of a life lived on the edge and the spirit of exploration. Marko has become an emblem of courage and a reminder that great journeys await those who embrace the unknown.</p>
+            </div>
+        </section>
+        <section class="author-card">
+            <img src="../images/author2.jpg" alt="Author 2" class="responsive-image" data-src="../images/author2.jpg">
+            <div class="author-info">
+                <h2>Tomi Perša</h2>
+                <p>Experienced front-end developer with a keen eye for design. Tomi is dedicated to delivering user-friendly and visually appealing web experiences.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 KIDS and Git</p>
+    </footer>
+
+    <!-- JavaScript for image preview -->
+    <script>
+        const images = document.querySelectorAll('.responsive-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('data-src');
+                const preview = document.createElement('div');
+                preview.className = 'image-preview';
+                preview.innerHTML = `<img src="${src}" alt="Image Preview">`;
+                document.body.appendChild(preview);
+
+                preview.addEventListener('click', () => {
+                    document.body.removeChild(preview);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
