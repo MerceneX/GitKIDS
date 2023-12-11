@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sites/styles/styles.css"> <!-- Link to your CSS file -->
+    <title>Banja Luka</title>
+</head>
+<body>
+    <header>
+        <h1>Banja Luka, Bosna in Hercegovina (RS)</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="left-text">
+            <article>
+                <h2>Zgodovina Banja Luke</h2>
+                <p>Banja Luka je glavno mesto Republike Srbske, enega od entitet v Bosni in Hercegovini. Mesto ima bogato zgodovino, ki sega več tisoč let nazaj. Tu je bilo naselje že v rimskih časih, znano kot Castrum ad Ladios, ki se je razvijalo ob reki Vrbas. V srednjem veku je bilo mesto del Ogrskega kraljestva, nato pa se je razvilo kot pomembno trgovsko središče pod Osmanskim cesarstvom. Med drugo svetovno vojno je Banja Luka doživela hudo uničenje, še posebej zaradi zračnih napadov in bojev na tem območju. Po vojni je postala del Socialistične Federativne Republike Jugoslavije. V devetdesetih letih 20. stoletja je Bosna in Hercegovina doživela obdobje vojne, ki je prizadela tudi Banjo Luko. Mesto je bilo prizorišče številnih spopadov in sprememb v sestavi prebivalstva. Po koncu vojne in ustanovitvi Republike Srbske je Banja Luka postala njen politični in kulturni center. Mesto se je začelo obnavljati in ponovno vzpostavljati svoj položaj kot eno izmed pomembnejših mest v regiji. Danes je Banja Luka moderno mesto z raznoliko kulturo, zgodovinskimi znamenitostmi in živahno skupnostjo.</p>
+            </article>
+        </div>
+        
+        <div class="center-images">
+            <img src="../images/bl1-comp.jpg" alt="Image Description 3" class="responsive-image" data-src="../images/bl1.jpg">
+            <img src="../images/bl2-comp.jpg" alt="Image Description 3" class="responsive-image" data-src="../images/bl2.jpg">
+        </div>
+        
+        <div class="right-text">
+            <article>
+                <h2>Kaj je novo?</h2>
+                <p>Banja Luka je v zadnjih letih doživela kar nekaj sprememb. Mesto se je razširilo z novimi stanovanjskimi soseskami, poslovnimi conami in nakupovalnimi središči. Leta 2018 so odprli novo nakupovalno središče Delta Planet, ki velja za enega najsodobnejših tovrstnih centrov v državi. Poleg trgovin ponuja še kino, otroška igrišča in restavracije. Mesto se je razširilo tudi proti jugu. Tam gradijo novo sosesko Petrićevac s sodobnimi stanovanji in infrastrukturo. Predvidena je tudi gradnja nove univerze in bolnišnice. Središče Banja Luke so v zadnjih letih temeljito prenovili. Uredili so javne površine, trge in sprehajalne poti ob reki Vrbas. Tako je postalo prijetnejše za prebivalce in turiste. Promet je še vedno velik problem, zato snujejo načrte za izboljšanje javnega prevoza in kolesarskih poti. Upajo, da se bo kakovost bivanja v prihodnjih letih še izboljšala.</p>
+            </article>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; Posted on <time datetime="2023-11-28">November 28, 2023</time> by Luka Balaban</p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.responsive-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('data-src');
+                const preview = document.createElement('div');
+                preview.className = 'image-preview';
+                preview.innerHTML = `<img src="${src}" alt="Image Preview">`;
+                document.body.appendChild(preview);
+
+                preview.addEventListener('click', () => {
+                    document.body.removeChild(preview);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
