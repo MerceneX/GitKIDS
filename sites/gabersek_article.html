@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sites/styles/styles.css"> <!-- Link to your CSS file -->
+    <title>Shrek: Last stand</title>
+    <style>
+        .grid-large-img {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shrek: Last stand</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+        <article>
+            <h2>Synopsis</h2>
+            <p>
+                In the mystical realm of Shrek's swamp, our favorite ogre finds himself facing an unexpected challenge when the Teletubbies, led by a mischievous figure named Tinky Winky, accidentally stumble into his territory. What starts as a whimsical misunderstanding quickly escalates into a clash of worlds, as the Teletubbies, with their colorful and playful nature, unwittingly disrupt the peaceful life Shrek has built for himself.
+            </p>
+        </article>
+        <article>
+            <h2>Cast</h2>
+            <p>
+                "Shrek: Last Stand" is set to be released on May 17, 2024.
+            </p>
+            <ul>
+                <li>Shrek: Voiced by Mike Myers</li>
+                <li>Tinky Winky: Voiced by Jim Cummings</li>
+                <li>Dipsy: Voiced by Rob Paulsen</li>
+                <li>Laa-Laa: Voiced by Grey Griffin</li>
+                <li>Po: Voiced by Tara Strong</li>
+                <li>Lord Farquaad: Voiced by John Lithgow</li>
+                <li>Donkey: Voiced by Eddie Murphy</li>
+                <li>Morgana (Enigmatic Sorceress): Voiced by Cate Blanchett</li>
+            </ul>
+            
+        </article>
+        </div>
+        <div class="grid-large-img">
+            <img src="../images/shrekwpp-comp.png" alt="Shrek telebani" class="responsive-image" data-src="../images/shrekwpp.png">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Posted on <time datetime="2023-12-13">December 13, 2023</time> by Maj Gaberšek</p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.responsive-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('data-src');
+                const preview = document.createElement('div');
+                preview.className = 'image-preview';
+                preview.innerHTML = `<img src="${src}" alt="Image Preview">`;
+                document.body.appendChild(preview);
+
+                preview.addEventListener('click', () => {
+                    document.body.removeChild(preview);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
