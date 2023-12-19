@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/KilianTrunk/styles.css">
+    <title>Digitalna Umetnost</title>
+</head>
+<body>
+    <header>
+        <h1>Digitalna Umetnost</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Glavna stran</a></li>
+            <li><a href="../about.html">O nas</a></li>
+            <li><a href="../contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Uvod</h2>
+            <br>
+            <p>
+                Digitalna umetnost je postala neizogiben del sodobne umetniške krajine, ki prinaša inovacije, sveže perspektive ter neskončne možnosti izražanja. S pomočjo najnovejših tehnologij umetniki raziskujejo nove dimenzije kreativnosti, spreminjajoč tradicionalne meje in ustvarjajo umetniška dela, ki so prej veljala za nemogoča</p>
+        </article>
+        <article>
+            <h2>Digitalna Umetnost v Spletu</h2>
+            <br>
+            <img src="../../images/KilianTrunk/clanek1.jpeg" alt="Image Description 1" class="responsive-image" data-src="../../images/KilianTrunk/clanek1.jpeg">
+            <br>
+            <p>
+                S sodobnimi tehnologijami umetniki presegajo omejitve klasičnih umetniških medijev. Grafični oblikovalci, ilustratorji in umetniki uporabljajo računalniške programe, virtualno resničnost, in umetno inteligenco za ustvarjanje vizualnih kompozicij, ki presegajo tradicionalne okvire. Digitalno risanje, 3D modeliranje in generativna umetnost omogočajo umetnikom, da svoje ideje prenesejo v virtualni prostor.</p>
+        </article>
+        <article>
+            <h2>Raziskovanje Sodobnih Tehnologij</h2>
+            <br>
+            <p>
+                S pojavom interneta je digitalna umetnost postala globalno dostopna. Umetniki lahko delijo svoja dela prek spletnih platform, socialnih medijev in virtualnih galerij, dosežejo občinstvo po celem svetu. To omogoča ustvarjanje globalne umetniške skupnosti, kjer se ideje in tehnike prenašajo med različnimi kulturami in tradicijami.</p>
+        </article>
+        <article>
+            <h2>Interaktivne Izkušnje za Gledalce</h2>
+            <br>
+            <img src="../../images/KilianTrunk/clanek2.avif" alt="Image Description 1" class="responsive-image" data-src="../../images/KilianTrunk/clanek2.avif">
+            <br>
+            <p>
+                Digitalna umetnost ne le preoblikuje ustvarjalni proces umetnikov, temveč tudi vpliva na izkušnjo gledalcev. Interaktivne instalacije, umetnost v obliki virtualne resničnosti in projektov v realnem času omogočajo občinstvu, da postane aktivni udeleženec v umetniškem delu. Gledalci so vpeti v digitalni svet umetnika, kjer lahko sami sooblikujejo in doživljajo umetniško delo.</p>
+        </article>
+        <article>
+            <h2>Generativna Umetnost in Umetna Inteligenca</h2>
+            <br>
+            <p>
+                Generativna umetnost, ki se napaja s pomočjo algoritmov in umetne inteligence, odpira vrata popolnoma novim načinom ustvarjanja. Umetniki lahko zdaj sodelujejo s programi, ki generirajo avtonomne umetniške izraze, ki presegajo človeško sposobnost. To ustvarja edinstveno sintezo med umetnostjo in tehnologijo, kjer se ustvarjalni proces razvija v simbiozi z računalniškim znanjem.</p>
+        </article>
+        <article>
+            <h2>Zaključek</h2>
+            <br>
+            <img src="../../images/KilianTrunk/clanek3.png" alt="Image Description 1" class="responsive-image" data-src="../../images/KilianTrunk/clanek3.png">
+            <br>
+            <p>
+                Digitalna umetnost ne le spreminja način, kako umetniki izražajo svojo kreativnost, temveč tudi razširja obzorja gledalcev in ustvarja most med tradicijo in tehnologijo. S sodobnimi tehnologijami in inovativnimi pristopi digitalna umetnost odpira vrata neskončnim možnostim izražanja, ki širijo horizonte umetniškega sveta.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Posted on <time datetime="2023-12-19">December 19, 2023</time> by Kilian Trunk</p>
+    </footer>
+	<!-- JavaScript for image preview -->
+    <script>
+        const images = document.querySelectorAll('.responsive-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('data-src');
+                const preview = document.createElement('div');
+                preview.className = 'image-preview';
+                preview.innerHTML = `<img src="${src}" alt="Image Preview">`;
+                document.body.appendChild(preview);
+
+                preview.addEventListener('click', () => {
+                    document.body.removeChild(preview);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
