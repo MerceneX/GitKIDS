@@ -1,0 +1,88 @@
+html, body  {
+    margin: 0;
+    padding: 0;
+}
+
+#Naslov_1 {
+    background-color: orange;
+    text-align: center;
+    margin: 0px;
+    padding:10px;
+
+}
+.nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    
+}
+ul {
+    
+   background-color: orange;
+    text-align: center;
+    padding:10px;
+    margin-top: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#tabela{
+    width: 100%;
+    border-collapse: collapse;
+    display: inline-block;
+    
+}
+
+img {
+    width: 100%;
+    object-fit: cover;   
+}
+
+td {
+    display: table-cell;
+    text-align: center;
+
+   
+}
+#td1 , #td2{
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    
+}
+.slike{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    
+}
+
+#pre1 {
+    text-align: center;
+    display:block;
+    margin-right:100px ;
+}
+pre {
+    margin-right:100px ;
+    display: inline-block;
+}
+#noga {
+    text-align: center;
+    background-color: orange;
+    padding: 5px;
+}
+
+.container
+{
+    display: flex
+}
+
+.stolpci
+{
+    flex: 1;
+    margin: 10px 10px;
+}
+
