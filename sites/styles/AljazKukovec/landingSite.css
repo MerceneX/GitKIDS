@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root[data-theme="light"] {
+  --text: #080e0d;
+  --background: #f4f9f9;
+  --primary: #5ca4a3;
+  --secondary: #a3b4cb;
+  --accent: #808db8;
+}
+:root[data-theme="dark"] {
+  --text: #f2f8f7;
+  --background: #050a0a;
+  --primary: #5ca3a2;
+  --secondary: #33455b;
+  --accent: #48557f;
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-size: medium; */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+
+}
+
+
+.nav-bar {
+  display: flex;
+  color: var(--text);
+  background-color: var(--secondary);
+  flex-grow: 1;
+  
+}
+
+.nav-bar-list {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  padding-left: 8rem;
+  
+}
+
+.nav-bar-list > li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 2rem;
+}
+
+
+input {
+  padding: 1rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+.logo-row {
+  text-align: center !important;
+}
+
+.logo-block {
+  align-items: center;
+  width: 100% !important;
+  /* height: 100px; */
+  background-color: purple;
+  padding: 5rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  margin: 5rem;
+  margin-top: 2rem;
+  border-radius: 4rem;
+  background-image: linear-gradient(25deg, var(--accent), var(--primary));
+  
+}
+
+@media (min-width:600px) {
+  .logo-block {
+    padding: 1.8rem;
+  }
+}
+@media (max-width:1500px) {
+  .logo-block {
+    padding: 3rem;
+  }
+}
+
+h1 {
+  /* color: red; */
+  text-align: center !important;
+  width: 100%;
+  font-weight: 800 !important;
+  font-size: 60px !important;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center !important;
+  width: 100%;
+}
+
+.line-sepperator {
+  width: 100% !important;
+  border: 5px var(--accent) !important;
+  background-color: black;
+  height: 2px;
+  margin-top: 2rem;
+}
+
+.space {
+  height: 2rem;
+}
+
+article {
+  padding-top: 2rem;
+  font-size: medium;
+}
+
+.list-title {
+  font-size: x-large;
+  text-decoration: underline;
+}
+
+article > p > a, 
+article > ul > li > a,
+footer > p > a {
+  text-decoration: none;
+  text-transform: none;
+  color: var(--accent)
+}
+
+p {
+  padding-top: 2rem;
+}
+
+
+.changelog-img {
+  width: 50vw;
+}
+
+.img {
+  text-align: center;
+}
+
+.sub-title {
+  margin-top: -3rem;
+}
+
+footer {
+  background-color: var(--secondary);
+  margin-bottom: -1rem;
+  text-align: center;
+}
+
+.footer-text {
+  padding: 0;
+}

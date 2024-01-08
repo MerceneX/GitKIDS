@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sites/styles/AljazKukovec/landingSite.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Blog Post</title>
+
+    
+  </head>
+  <body>
+  
+    
+    <div class="nav-bar">
+    
+      <ul class="nav-bar-list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/sites/about.html">About</a></li>
+        <li><a href="/sites/AljazKukovec/contact.html">Contact</a></li>
+      </ul>
+      <input
+        type="image"
+        width="70rem"
+        src="/images/AljazKukovec/Sun-Moon.svg"
+        data-theme-toggle>
+      </input>
+    </div>
+    
+    
+    <div class="container">
+      <div class="row space"></div>
+      <div class="row">
+        <div class="col-1 vertical"></div>
+        
+        <div class="col-10">
+          <article>
+            <div class="row title">
+              <h1>changelog</h1>
+            </div>
+            <div class="row logo-row">
+              <div class="logo-block">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#000" viewBox="0 0 284 65"><path d="M141.68 16.25c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm117.14-14.5c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm-39.03 3.5c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9v-46h9zM37.59.25l36.95 64H.64l36.95-64zm92.38 5l-27.71 48-27.71-48h10.39l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10v14.8h-9v-34h9v9.2c0-5.08 5.91-9.2 13.2-9.2z" /><!--With love, the ▲ team--></svg>
+              </div>
+            </div>
+            <div class="row sub-title">
+              <h3>Improved Speed Insights experiences</h3>
+            </div>
+            <div class="row line-sepperator"> </div>
+              <p>Speed Insights measures site performance and helps you understand areas for improvement. This includes Core Web Vitals like <a href="https://vercel.com/docs/speed-insights#first-contentful-paint-fcp" target="_blank">First Contentful Paint</a>, <a href="https://vercel.com/docs/speed-insights#first-contentful-paint-fcp" target="_blank">Largest Contentful Paint</a>, <a href="https://vercel.com/docs/speed-insights#first-contentful-paint-fcp" target="_blank">Layout Shift</a>, and more.</p>
+              <br>
+              <div class="img"><img src="/images/AljazKukovec/VERCEL_img_changelog.png" class="changelog-img"> </div>
+              <br>
+              <p class="list-title">The Speed Insights experience has been improved to include:</p>
+              <ul>
+                <li>Support for all frontend frameworks: You can now use Speed Insights with any framework using the new @vercel/speed-insights package. This includes supporting dynamic route segments in frameworks like SvelteKit and Remix.</li>
+                <li>First-party data ingestion: Data will now be processed directly through your own domain, eliminating the third-party domain lookup.</li>
+                <li>Updated scoring criteria: All previous and future metrics measured by Speed Insights are now updated with new weights, based on the latest guidance from Core Web Vitals and Lighthouse.</li>
+                <li>UI improvements: You can now view performance data by region. Displayed metrics now default to p75 (the experience of the fastest 75% of your users).</li>
+                <li>Time to First Byte (TTFB): This metric is now measured, providing visibility into how quickly the server responds to the first request.</li>
+                <li>Advanced customization: New tools to <a href ="https://vercel.com/docs/speed-insights/package#beforesend" target="_blank">intercepts requests</a> and <a href="https://vercel.com/docs/speed-insights/package#samplerate" target="_blank">set sample rates</a> on a per-project basis.</li>
+              </ul>
+          </article>
+        
+        </div>
+        
+        <div class="col-1"></div>
+      </div>
+    </div>
+
+    <script src="/sites/styles/AljazKukovec/theme-toggle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  <footer>
+    <p class="fotter-text">© Created on December 12, 2023 by Aljaž Kukovec</p>
+    <p class="footer-text">All content on this site was used as an example and belongs to <a href="https://vercel.com/" target="_blank">Vercel</a>, originating from this <a href="https://vercel.com/changelog/next-js-14" target="_blank">post</a></p>
+    
+  </footer>
+
+</html>
