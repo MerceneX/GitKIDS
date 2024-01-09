@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: bisque;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 60px;
+            text-decoration: none;
+            color: black;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .blog {
+            border: 0.1px solid #ddd;
+            background-color:  #fff8e7;
+            padding: 15px;
+        }
+
+      
+
+        footer {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+    <title>Kitarski Blog</title>
+</head>
+<body>
+
+    <header>
+        <h1>Kitarski Blog</h1>
+    </header>
+
+    <nav>
+        <a href="HTML clanek.html">Domov</a>
+        <a href="about.html">O Nas</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+
+    <section>
+        <div class="blog">
+            <h2>Kako pravilno nastaviti višino strun na kitaro</h2>
+            <p>Nastavljanje višine strun na kitaro je ključno za optimalno igranje in zvok. Začnite z uglašeno kitaro. Uporabite izvijač ali imbus ključ za prilagajanje višine strun ob mostu. Poskrbite, da so strune dovolj visoko, da se izognete neželenim trzanjem, vendar ne previsoko, da ohranite lahkotnost igranja. Po končani nastavitvi preverite intonacijo.</p>
+          
+            <img src="../images/AmadejLupše/slika_bloga1.jpg" alt="Slika Bloga 1" width="300px" height="auto" data-src="slika_bloga1">
+        </div>
+
+       
+        <div class="blog">
+            <h2>Kako izbrati pravi ojačevalnik za svojo kitaro</h2>
+            <p>Pri izbiri ojačevalnika za kitaro upoštevajte moč, vrsto, in funkcije. Razmislite o žanru glasbe, ki ga igrate, in prostoru, kjer igrate. Preizkusite več modelov, da najdete tistega, ki ustreza vašemu slogu in zvoku.</p>
+            <img src="../images/AmadejLupše/slika_bloga2.jpg" alt="Slika Bloga 2" width="300px" height="auto">
+        </div>
+
+        
+        <div class="blog">
+            <h2>Top 5 Akordov, ki jih morate znati vsak kitarist</h2>
+            <p>Vsak kitarist bi moral obvladati pet osnovnih akordov: C-dur, G-dur, D-dur, A-mol, in E-mol. Ti akordi tvorijo trden temelj za številne pesmi v različnih žanrih in so ključni za začetno učenje kitare.</p>
+            <img src="../images/AmadejLupše/slika_bloga3.jpg" alt="Slika Bloga 3" width="300px" height="auto">
+        </div>
+
+        
+
+       
+        <div class="blog">
+            <h2>Kako izvajati popolne bendovske tehnike na kitari</h2>
+            <p>Navodila za izvajanje popolnih bendovskih tehnik na kitari, vključno s tremolom in uporabo vibrata. Izrazite svoj glasbeni izraz s temi naprednimi tehnikami.</p>
+            <img src="../images/AmadejLupše/slika_bloga5.jpg" alt="Slika Bloga 5" width="300px" height="auto">
+        </div>
+
+      
+        <div class="blog">
+            <h2>Kako izbrati prave strune za svojo kitaro</h2>
+            <p>Pri izbiri pravih strun za kitaro upoštevajte slog igranja, vrsto kitare in osebne preference. Lahke strune so primerne za začetnike, medtem ko lahko izkušeni kitaristi izberejo tiste z večjim uporom. Posvetujte se s strokovnjakom ali preizkusite različne vrste, da najdete optimalne strune za želeni zvok in udobje igranja.</p>
+            <img src="../images/AmadejLupše/slika_bloga6.jpg" alt="Slika Bloga 6" width="300px" height="auto">
+        </div>
+
+       
+
+       
+
+    </section>
+
+    <footer>
+        &copy; <span id="year"></span> Amadej Lupše
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+
+</body>
+</html>
