@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="C:\Users\admin\Desktop\SpletnaStran\Sites\Styles\izgled.css">
+<title> ROBTEH pametne ogrevalne instalacije</title>
+</head>
+
+<body>
+    <section class="glava">
+        <nav>
+        <a href="Projekt.html"><img src="C:\Users\admin\Desktop\SpletnaStran\Images\prenos.png"></a>
+            <div class="navigacija">
+                <ul>
+                    <li><a href="Projekt.html">DOMOV</a></li>
+                    <li><a href="O_nas.html">O NAS</a></li>
+                    <li><a href="Kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="textbox">
+            <h1>ROBTEH pametne toplotne inštalacije</h1>
+            <p>
+                Vodilne pametne toplotne inštalacije v Sloveniji. Uporabniku omogočajo nadzor nad vsemi toplotnimi inštalacijami v njegovem domu preko sodobne internetne aplikacije.
+            </p>
+            <a class="gumbVec" href="O_nas.html">Več o nas</a>
+        </div>
+    </section>
+
+    <!---- Naše storitve ----->
+
+    <section class="storitve">
+        <h1>Naše storitve</h1>
+        <p>Podjetje Robel predstavlja visoko tehnološke pametne števce in termostate, ki vašo hišo ali stanovanje spremenijo v dom. 
+            <br> Števci in termostati serije ROBTEH so vodilni na trgu in omogočajo popoln nadzor nad vašim ogrevanjem</p>
+        <div class="vrsta">
+            <div class="vrstica">
+                <h2>Pametni termostat</h2>
+                <p> Opis termostata, cena montaže, cena produkta</p>
+
+            </div>
+            <div class="vrstica">
+                <h2>Pametni števec</h2>
+                <p> Opis števa, cena montaže, cena produkta</p>
+
+            </div>
+            <div class="vrstica">
+                <h2>Servis in popravila</h2>
+                <p> Cena popravila in servisa, ko produkt ni več v garanciji </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!------- Mnenja uporabnikov ------>
+
+    <section class="MnenjaUporabnikov">
+        <h1>
+            Mnenja naših uporabnikov
+        </h1>
+        <p></p>
+        <div class="MnenjaVrstica">
+            <div class="MnenjaStolpec">
+                <img src="C:\Users\admin\Desktop\SpletnaStran\Images\uporabnik.png">
+                <div>
+                    <p>Odlična ponudba in kakovostna storitev! Vrhunsko</p>
+                    <h3>Janez Novak</h3>
+                </div>
+            </div>
+            <div class="MnenjaStolpec">
+                <img src="C:\Users\admin\Desktop\SpletnaStran\Images\uporabnik.png">
+                <div>
+                    <p>Odlično! Brez pripomb 10/10</p>
+                    <h3>Marija Novak</h3>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <!---- LOKACIJA ------>
+    
+    <section class="Lokacija">
+        <h1>
+            Kje nas lahko najdete?
+            <p>Najdete nas na naslovu Kotna ulica 1, 3000 Celje, Slovenia</p>
+        </h1>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <script>
+    function myMap() {
+    var mapProp= {
+    center:   {lat:46.24314908485983, lng:15.287008208235726},
+    zoom:19,
+    };
+    
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        /*var marker = new google.maps.Marker({
+        position: {lat:46.24314908485983, lng:15.287008208235726},
+        map: map
+        });*/
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFsE1VvhJQL8tzMo4D6aJ2ZfMyo5B2Dl4&callback=myMap"></script>
+
+    </section>
+
+    
+    <!--------- Noga spletne strani--------->
+
+    <section class="noga">
+        <h3>JAKA MASTNAK 2023 © </h3>
+    </section>
+
+</body>
+</html>
