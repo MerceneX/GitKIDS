@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/jv-blog-icon.jpg">
+    <meta name="og:image" content="../images/jv-blog-icon.jpg">
+    <title>Blog W</title>
+    <link rel="stylesheet" href="./styles/jv-blog-css.css">
+    <link rel="stylesheet" href="./styles/jv-blog-icons.css">
+
+
+</head>
+<body data-theme="dark">
+    <div id="main">
+        <div id="header">
+            <div id="menu">
+                <a>Domov</a>
+                <a href="./jv-blog-kontakt.html">Kontakt</a>
+                <a class="feri-brightness-contrast" onclick="changeTheme()"></a>
+        </div>
+    </div>
+    <ads>
+        <img src="../images/jv-blog-fakead.png">
+    </ads>
+        <div id="content">
+            <div class="intro">
+                <h1>BlogMajster</h1>
+                <p>Najboljši blog v Sloveniji od 2023</p>
+            </div>
+            <div class="posts">
+                <div class="blog-post" post="./jv-blog-post1.html">
+                    <img src="../images/jv-blog-icon.jpg">
+                    <h2>ChatGPT je rekel...</h2>
+                    <p>"Vprašal sem ga kaj bo za kosilo in neboste verjeli kaj je rekel..."</p>
+                </div>
+                <div class="blog-post" post="./jv-blog-post1.html">
+                    <img src="../images/jv-blog-icon.jpg">
+                    <h2>ChatGPT je rekel...</h2>
+                    <p>Vprašal sem ga kaj bo za kosilo in neboste verjeli kaj je rekel...</p>
+                </div>
+                <div class="blog-post" post="./jv-blog-post1.html">
+                    <img src="../images/jv-blog-icon.jpg">
+                    <h2>ChatGPT je rekel...</h2>
+                    <p>Vprašal sem ga kaj bo za kosilo in neboste verjeli kaj je rekel...</p>
+                </div>
+                <div class="blog-post" post="./jv-blog-post1.html">
+                    <img src="../images/jv-blog-icon.jpg">
+                    <h2>ChatGPT je rekel...</h2>
+                    <p>Vprašal sem ga kaj bo za kosilo in neboste verjeli kaj je rekel...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <p>© 2023 BlogMajster</p>
+        </div>
+    </div>
+    <script>
+        const body = document.getElementsByTagName("body")[0];
+
+var theme = localStorage.getItem("theme");
+if (theme === "dark") {
+    body.setAttribute("data-theme", "dark");
+} else if (theme === "light") {
+    body.setAttribute("data-theme", "light");
+}else{
+    body.setAttribute("data-theme", "dark");
+}
+
+function changeTheme() {
+    body.getAttribute("data-theme") === "dark" ? body.setAttribute("data-theme", "light") : body.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", body.getAttribute("data-theme"));
+}
+
+var posti = document.getElementsByClassName("blog-post");
+
+var toPost = function() {
+    var naslovPosta = this.getAttribute("post");
+    window.location.href = naslovPosta;
+};
+
+for (var i = 0; i < posti.length; i++) {
+    posti[i].addEventListener('click', toPost, false);
+}
+
+// const exitImg = document.getElementById("exit-img");
+// const hqImg = document.getElementById("hqImg");
+// const imgViewer = document.getElementById("img-viewer");
+
+// exitImg.addEventListener('click', function() {
+//     imgViewer.classList.remove("show");
+//     hqImg.src = "";
+// });
+
+// var slike = document.getElementsByClassName("big-img");
+
+// var viewImage = function() {
+//     var imageToShow = this.getAttribute("full-img");
+//     hqImg.src = imageToShow;
+//     imgViewer.classList.add("show");
+// };
+
+// if(posti.length > 0) {
+//     for (var i = 0; i < posti.length; i++) {
+//         slike[i].addEventListener('click', viewImage, false);
+//     }
+// }
+    </script>
+</body>
+</html>

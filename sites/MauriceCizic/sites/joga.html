@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Moj Blog</title>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Planet Gym</h1>
+        <a href="index.html"><img class="planet" src="../images/Planetgymlogo.png" link=""></a>
+        <div class="header-nav">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="navbar" class="nav-hidden">
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="onas.html">O Nas</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="jogicamain">
+        <h1 class="jogica">Če nisi 50 letna mamica ka tf te delaš tu</h1>
+    </main>
+    <footer>
+        <p>&copy; Maurice Čiži Rotti</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    var menuIcon = document.querySelector(".menu-icon");
+    navbar.classList.toggle("nav-hidden");
+    menuIcon.classList.toggle("active");
+}
+
+    </script>
+</body>
+</html>

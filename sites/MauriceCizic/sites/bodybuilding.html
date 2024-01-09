@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Moj Blog</title>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Planet Gym</h1>
+        <a href="index.html"><img class="planet" src="../images/Planetgymlogo.png" link=""></a>
+        <div class="header-nav">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="navbar" class="nav-hidden">
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="onas.html">O Nas</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="Odzadje">
+         <main class="bodybalding">
+            <img src="../images/JayCutler.png" alt="Cuttlii" class="responsive-image">
+            <article>
+                <h2>Tekmovalnost</h2>
+                <p>Bodybuilding je ena najbolj tekmovalnih športov na svetu! Vsi z celega sveta
+                    tekmujejo gdo je "Največja mašina". Zaradi tega se tudi vsi potiskajo do svojih
+                    meja in probajo pokazati svojo najboljše telo! Zaradi tega se večina bodybuilderjev
+                    odloči za jemanje steroidov! 
+                    EVERY EDGE COUNTS!
+                </p>
+            </article>
+            <img src="../images/RonnieColeman.png" alt="Ronjoo" class="responsive-image">
+            <article>
+                <h2>Pomembnost</h2>
+                <p>Menda si je vsak že mislo, mm toti pa dobro zgleda, in jaz bi tudi rad tako zgledal. Zato
+                    je bodybuilding scena tako pomembna saj, da ljudem cilj (seveda neresničen) vendar vseeno cilj, da bi tako izgledali
+                    s tem si izboljšajo slabše navade in napravijo disciplino!
+                </p>
+            </article>
+            <img src="../images/arnold.png" alt="Arjiii" class="responsive-image">
+            <article class="zadnji">
+                <h2>Legacy</h2>
+                <p>Vsak bodybuilder si želi nekaj predpostavit in opravit, recimo arnold je 
+                    inspiracija za veliko ljudi z svojimi masnimi prsi!
+                </p>
+            </article>
+        </main>
+    </main>
+    <footer>
+        <p>&copy; Maurice Čižič Rottner</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    var menuIcon = document.querySelector(".menu-icon");
+    navbar.classList.toggle("nav-hidden");
+    menuIcon.classList.toggle("active");
+}
+
+    </script>
+</body>
+</html>

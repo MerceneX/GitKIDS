@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/jv-blog-post1-img.png">
+    <meta name="og:image" content="../images/jv-blog-post1-img.png">
+    <title>Blog W</title>
+    <link rel="stylesheet" href="./styles/jv-blog-css.css">
+    <link rel="stylesheet" href="./styles/jv-blog-icons.css">
+
+
+</head>
+<body data-theme="dark">
+    <img-view id="img-viewer">
+        <div>
+            <img id="hqImg" src="../images/jv-blog-fakead.png">
+            <a id="exit-img" class="feri-x-altx-alt"></a>
+        </div>
+    </img-view>
+    <div id="main">
+        <div id="header">
+            <div id="logo"></div>
+            <div id="menu">
+                <a href="./jv-blog-front.html">Domov</a>
+                <a href="./jv-blog-kontakt.html">Kontakt</a>
+                <a class="feri-brightness-contrast" onclick="changeTheme()"></a>
+        </div>
+    </div>
+        <div id="post-page">
+            <div id="infonimage">
+                <img src="../images/jv-blog-icon.jpg">
+                <h2>ChatGPT je rekel...</h2>
+                <p>"Vprašal sem ga kaj bo za kosilo in neboste verjeli kaj je rekel..."</p>
+            </div>
+            <div id="postcontent">
+                <p>Vsi poznamo ChatGPT in kako pomagljiv je lahko. Ampak pred kratkim se je pa zgodilo da se je odzval malo neprijazno in boleče do sogovornika.</p>
+                <p>Kar sami si poglejte:</p>
+                <img src="../images/jv-blog-post1-img.png" class="big-img" full-img="../images/jv-blog-post1-img.png">
+                <p>Kot vidite, je naš uporabnik ChatGPT vprašal: <b>"Kaj bo danes za kosilo?"</b>, na kaj se je sam ChatGPT odzval:</p>
+                <p><b>"Na žalost ne morem dejansko pripraviti hrane ali naročiti dostave, vendar vam lahko predlagam nekaj idej za kosilo glede na vaše želje in prehranske omejitve. Na kaj ste danes lačni? Morda lahko predlagam nekaj receptov ali vrste jedi."</b></p>
+                <p>To je bil zares predrzen odgovor. Tega uporabnika smo seveda kontaktirali za intervju.</p>
+                <p><b>Govorec je temu samo dodal: "Dan je bil pokvarjen, depresija je povzkočila na najvišjo raven in lačen sem še vedno bil :("</b></p>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <p>© 2023 BlogMajster</p>
+        </div>
+    </div>
+    <script>
+        const body = document.getElementsByTagName("body")[0];
+
+var theme = localStorage.getItem("theme");
+if (theme === "dark") {
+    body.setAttribute("data-theme", "dark");
+} else if (theme === "light") {
+    body.setAttribute("data-theme", "light");
+}else{
+    body.setAttribute("data-theme", "dark");
+}
+
+function changeTheme() {
+    body.getAttribute("data-theme") === "dark" ? body.setAttribute("data-theme", "light") : body.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", body.getAttribute("data-theme"));
+}
+
+var posti = document.getElementsByClassName("blog-post");
+
+var toPost = function() {
+    var naslovPosta = this.getAttribute("post");
+    window.location.href = naslovPosta;
+};
+
+for (var i = 0; i < posti.length; i++) {
+    posti[i].addEventListener('click', toPost, false);
+}
+
+const exitImg = document.getElementById("exit-img");
+const hqImg = document.getElementById("hqImg");
+const imgViewer = document.getElementById("img-viewer");
+
+exitImg.addEventListener('click', function() {
+    imgViewer.classList.remove("show");
+    hqImg.src = "";
+});
+
+var slike = document.getElementsByClassName("big-img");
+
+var viewImage = function() {
+    var imageToShow = this.getAttribute("full-img");
+    hqImg.src = imageToShow;
+    imgViewer.classList.add("show");
+};
+
+if(posti.length > 0) {
+    for (var i = 0; i < posti.length; i++) {
+        slike[i].addEventListener('click', viewImage, false);
+    }
+}
+    </script>
+</body>
+</html>
