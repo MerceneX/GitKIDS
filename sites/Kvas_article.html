@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sites/styles/styles.css"> <!-- Link to your CSS file -->
+    <title>KIDS and Git 2023/24</title>
+</head>
+
+<body>
+    <header>
+        <h1>KIDS and Git 2023/24</h1>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!--<li><a href="index.html">Home</a></li>-->
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Quantum Innovations</h2>
+            <p>Posted on <time datetime="2023-12-12">December 12, 2023</time> by Tilen Kvas</p>
+            <img src="images/Compact-Quantom.jpg" alt="Image Description 1" class="responsive-image"
+                data-src="images/Quantom.jpg">
+            <p>
+                Tilen, a fervent explorer, discovered his passion within the essence of Quantum Innovations. The
+                enduring commitment to cutting-edge technology and the exhilarating journey of pushing scientific
+                boundaries resonated deeply with his adventurous spirit. Tilen's affinity for Quantum Innovations
+                surpassed a mere appreciation for innovation; it was a profound connection to the boundless
+                possibilities, the thrill of progress, and the endless pursuit of knowledge that seemed to call his
+                name.
+            </p>
+            <a href="sites/blog1.html" class="read-more">Read More</a>
+        </article>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 KIDS and Git</p>
+    </footer>
+    <!-- JavaScript for image preview -->
+    <script>
+        const images = document.querySelectorAll('.responsive-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('data-src');
+                const preview = document.createElement('div');
+                preview.className = 'image-preview';
+                preview.innerHTML = `<img src="${src}" alt="Image Preview">`;
+                document.body.appendChild(preview);
+
+                preview.addEventListener('click', () => {
+                    document.body.removeChild(preview);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
