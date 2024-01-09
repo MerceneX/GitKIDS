@@ -1,0 +1,313 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Trajan;
+  src: url('TrajanProRegular.woff') format('woff');
+}
+
+html {
+	margin: 0px;
+	background-color: #2f0e19;
+	font-family: Trajan;
+}
+
+body {
+	margin: 0px;
+	background-color: #2f0e19;
+	font-family: Trajan;
+}
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+h1{
+	background-color: #78121d;
+	color: #d8cbb8;
+	padding: 10px;
+	text-align: center;
+	margin: 0;
+	
+}
+
+ul{
+	background-color: #a0412f;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+li{
+	display: inline-block;
+}
+
+a{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 16px;
+}
+
+a:hover {
+  background-color: #833221;
+}
+
+article.vsebina{
+	width: 100%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.vsebina{
+	width: 100%;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+}
+
+div.kartica{
+	background-color: #b86c4f;
+	color: white;
+	margin: 1%;
+}
+
+div.kartica h2{
+	padding: 10px;
+	color: white;
+	background-color: #a0412f;
+	text-align: center;
+}
+
+article.vsebina p{
+	margin: 10px;
+}
+
+video{
+	width: 100%;
+}
+
+figure{
+	margin: 0;
+}
+
+div.kartica img{
+	width: 100%;
+}
+
+figcaption{
+	text-align: center;
+}
+
+div.kartica.izdelek{
+	width: 31%;
+	height: 400px;
+	float: left;
+}
+
+div.kartica.izdelek h3{
+	margin: 0px;
+	padding: 10px;
+	height: 40px;
+	background-color: #a0412f;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+}
+
+div.kartica.izdelek img{
+	width: 100%;
+	height: 200px;
+	margin: 0px;
+	padding: 0px;
+	object-fit: cover;
+	display: block;
+}
+
+div.opis p{
+	margin: 0px;
+	padding: 5px;
+	height: 160px;
+	overflow: auto;
+}
+
+label.oznaka{
+	display: inline-block;
+	width: 180px;
+}
+
+input[type=text]{
+	width: 100%;
+	padding-bottom: 12px;
+	padding-top: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	display: inline-block;
+	border: 2px;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: white;
+	background-color: #918a97;
+	color: white;
+}
+
+input[type=text]:focus{
+	border-style: solid;
+	border-color: #a0412f;
+}
+
+textarea{
+	padding-bottom: 12px;
+	padding-top: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+	height: 150px;
+	resize: none;
+	border: 2px;
+	border-radius: 5px;
+	border-style: solid;
+	border-color: white;
+	background-color: #918a97;
+	color: white;
+}
+
+textarea:focus{
+	border-style: solid;
+	border-color: #a0412f;
+}
+
+input[type=submit]{
+	width: 100%;
+	padding: 16px;
+	margin-top: 10px;
+	border: 0;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: #a0412f;
+	color: white;
+}
+
+input[type=submit]:hover{
+	background-color: #482d4b;
+	cursor: pointer;
+}
+
+.radio-gumb {
+	display: inline;
+	position: relative;
+	padding-left: 20px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.radio-gumb input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.pika {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.radio-gumb:hover input ~ .pika {
+  background-color: #ccc;
+}
+
+.radio-gumb input:checked ~ .pika {
+  background-color: #a0412f;
+}
+
+.pika:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-gumb input:checked ~ .pika:after {
+  display: block;
+}
+
+.radio-gumb .pika:after {
+ 	top: 25%;
+	left: 25%;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.checkbox-gumb {
+  display: inline;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.checkbox-gumb input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.kljukica {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 16px;
+  width: 16px;
+  border-radius: 10%;
+  background-color: #eee;
+}
+
+.checkbox-gumb:hover input ~ .kljukica {
+  background-color: #ccc;
+}
+
+.checkbox-gumb input:checked ~ .kljukica {
+  background-color: #a0412f;
+}
+
+.kljukica:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-gumb input:checked ~ .kljukica:after {
+  display: block;
+}
+
+.checkbox-gumb .kljukica:after {
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+form {
+	padding: 10px;
+	padding-top: 0;
+}
