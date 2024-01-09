@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Moj Blog</title>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Planet Gym</h1>
+        <a href="index.html"><img class="planet" src="../images/Planetgymlogo.png" link=""></a>
+        <div class="header-nav">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="navbar" class="nav-hidden">
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="onas.html">O Nas</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="Stuff">
+        <section class="fitness-article">
+            <img src="../images/FitnessSlika1.png" alt="Fitnes Aktivnost 1" class="article-image">
+            <h2>Kardijo</h2>
+            <p>Ste se kdaj počutili brez sape? Ali se počutite, da nemorete več teči po vsem tem McDonaldsu ki ga
+                vlagate v sebe? Nikoli Več! Pridružite se nam in bomo to dali stran!
+            </p>
+            <a href="kardio.html" class="read-more-btn">Preberi Več</a>
+        </section>
+        
+        <section class="fitness-article">
+            <img src="../images/FitnessSlika2.png" alt="Fitnes Aktivnost 2" class="article-image">
+            <h2>Joga</h2>
+            <p>Ste se kdaj počutili brez energije? Ali pa se samo hočete povezati z telesom? Pri nam ponujamo
+                najboljšo jogo po celem svetu! Sigurno se boste povezali z vašim ki-jem!
+            </p>
+            <a href="joga.html" class="read-more-btn">Preberi Več</a>
+        </section>
+
+        <section class="fitness-article">
+            <img src="../images/FitnessSlika3.png" alt="Fitnes Aktivnost 3" class="article-image">
+            <h2>Bodybuilding!</h2>
+            <p>Hočete dvigovati in premikati težke uteži, za izgled vašega telesa? Ste nezadovoljni
+                s sabo in hočete biti še bolj nezadovoljni s sabo? Vas mučijo demoni in nočne more? Vse to lahko odpravite
+                z dvigovanjem uteži!
+            </p>
+            <a href="bodybuilding.html" class="read-more-btn">Preberi Več</a>
+        </section>
+    </main>
+    <footer class="Noga">
+        <p>&copy; Maurice Čižič Rottner</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    var menuIcon = document.querySelector(".menu-icon");
+    navbar.classList.toggle("nav-hidden");
+    menuIcon.classList.toggle("active");
+}
+
+    </script>
+</body>
+</html>
