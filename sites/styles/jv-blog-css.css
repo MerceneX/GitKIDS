@@ -1,0 +1,256 @@
+:root{
+    --menu-background-color: #f6f6f7;
+    --background-color: #ffffff;
+    --text-color: black;
+    --soft-red: #c44d4d;
+    --menu-border: #171717;
+}
+  
+body[data-theme="dark"]{
+    --menu-background-color: #171717;
+    --background-color: #1c1b1b;
+    --text-color: #ffffff;
+    --menu-border: #f6f6f7;
+}
+
+body{
+    background: var(--background-color);
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+    font-family: Inter,system-ui,sans-serif;
+    min-height: 100dvh;
+}
+
+img-view{
+    min-height: 100dvh;
+    min-width: 100dvw;
+    display: inline-grid;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    z-index: -1;
+    background-color: rgba(23, 23, 23, 0.925);
+    transition: all 0.14s ease-in;
+    opacity: 0;
+}
+
+img-view.show{
+    opacity: 1;
+    z-index: 999;
+}
+
+img-view div a{
+    font-size: 30px;
+}
+
+img-view div img{
+    max-height: 100dvh;
+    max-width: 100dvw;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.55);
+    
+}
+
+img-view div{
+    max-width: 1200px;
+}
+
+#main{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#header{
+    background: var(--menu-background-color);
+    margin-bottom: 20px;
+}
+
+#footer{
+    width: 100%;
+    background: var(--menu-background-color);
+    text-align: center;
+    margin-top: auto;
+}
+
+#menu a{
+    padding: 20px;
+    transition: 0.14s ease-in;
+    font-weight: 500;
+    border-bottom: 2px solid var(--menu-border);
+    text-decoration: none;
+    color: var(--text-color);
+
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+#menu a:hover{
+    background: var(--soft-red);
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+}
+
+.blog-post{
+    width: 15vw;
+    background-color: var(--menu-background-color);
+    border-radius: 20px;
+    padding: 25px;
+    transition: 0.14s ease-in;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.blog-post:hover{
+    background-color: var(--soft-red);
+    transform: scale(1.05);
+}
+
+.blog-post h2{
+    margin: 0;
+    margin-bottom: 10px;;
+}
+
+.blog-post p{
+    margin: 0;
+}
+
+.blog-post img{
+    width: inherit;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 10px;
+}
+
+#content, #post-page{
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.posts{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;;
+}
+
+ads{
+    display:flex;
+    justify-content: center;
+    width: 98vw;
+    text-align: center;
+    position: inherit;
+    margin-bottom: 15px;
+}
+
+ads img{
+    width: auto;
+    position: initial;
+}
+
+#post-page{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    height: 100%;
+}
+
+#post-page #infonimage{
+    width:35%;
+    margin: auto 0;
+    background: var(--menu-background-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#post-page #infonimage img{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#post-page #postcontent{
+    width: auto;
+    background: var(--menu-background-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#post-page #postcontent img{
+    border-radius: 20px;
+    width:fit-content;
+    display: flex;
+    margin: auto;
+}
+
+.intro{
+    width: auto;
+    height: 20dvh;
+    background: var(--menu-background-color);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro h1, .intro p{
+    margin: 0px;
+}
+
+.intro h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1349px) {
+    ads{
+        display:flex;
+        justify-content: center;
+        width: 98vw;
+        text-align: center;
+        position: inherit;
+        margin: 15px;
+    }
+
+    ads img{
+        
+        width: auto;
+        position: initial;
+    }
+
+    ads img:nth-child(2){
+        display: none;
+    }
+}
+
+.feri-x-altx-alt, .feri-brightness-contrast{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exit-img{
+    color: rgb(250, 57, 57);
+}

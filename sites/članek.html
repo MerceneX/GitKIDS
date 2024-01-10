@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sites/styles/Zelko_style.css"/>
+    <title>ČLANEK</title>
+  </head>
+  <body>
+    <header>
+      <h1>Načrtovanje spletne strani</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Domov</a></li>
+        <li><a href="../sites/about.html">O nas</a></li>
+        <li><a href="../sites/contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h2>Prenos</h2><br>
+        <img src = "../images/AndrejZelko/download.png" alt="Image Description 1" class="responsive-image" data-src="../images/AndrejZelko/download.png"
+        <br><p><b>Download for:</b></p><br>
+        <p>Android: www.fnancemanage/android</p><br>
+        <p>IOS: www.fnancemanager/ios</p><br>
+        <p>Windows: www.fnancemanager/windows</p><br>
+        <p>MacOS: www.fnancemanager/macos</p>
+        </article>
+        <article>
+          <h2>Partners</h2><br>
+          <img src="../images/AndrejZelko/revolut.png" alt="Image Description 2" class="responsive-image" data-src="../images/AndrejZelko/revolut.png"><br>
+            <p><i>Naši informacijski partnerji so dragoceni pri zagotavljanju kakovostne, zaupanja vredne vsebine za objavo na spletnih mestih. Pod povezavo Preberi več je seznam nekaj naših trenutnih partnerjev.</i></p><br><br><br>
+            <a href="#" class="read-more">Read More </a>
+        </article>
+        <article>
+          <h2>Live support</h2><br>
+          <p>Our services are open 24/7:</p><br>
+          <p>051 542 221</p><br>
+          <p>financemanager@support.net</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 December 10, Andrej Zelko </p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.responsive-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('data-src');
+                const preview = document.createElement('div');
+                preview.className = 'image-preview';
+                preview.innerHTML = `<img src="${src}" alt="Image Preview">`;
+                document.body.appendChild(preview);
+
+                preview.addEventListener('click', () => {
+                    document.body.removeChild(preview);
+                });
+            });
+        });
+    </script>
+  </body>
+</html>

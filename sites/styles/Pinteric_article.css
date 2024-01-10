@@ -1,0 +1,106 @@
+/*Celotni html dokument*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*Glava*/
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+/*Naslov v navigacijski vrstici*/
+header h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    margin-left:60px;
+}
+
+/*da seznam nima oznacb*/
+header .navbar ul{
+    list-style: none;
+}
+
+/*elementi seznama*/
+header .navbar ul li {
+position: relative;
+float: left;
+padding: 55px;
+}
+/*povezave v seznamu "o nas", "kontakt"*/
+header .navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;  
+    font-size: 1.1rem;
+
+}
+
+/*navigacijska vrstica*/
+.navbar{
+    margin-right: 35px;
+}
+
+/*Sekcija z slikami*/
+.post{
+    margin: 2.5rem;
+    display: grid; /*Omogoca da so postavljene po vrstis*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 200px)); 
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  /*Kartice v katerih so slike in opis*/
+  .post-box{
+    background: whitesmoke;
+    box-shadow: 0 4px 14px hsl(355deg 25% 15% / 10%);
+    padding: 15px;
+    border-radius: 0.5rem; /*Zaobljene kartice*/
+  }
+/*izgled slik*/
+  .post-img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem; /*Zaobljene slike*/
+  }
+
+  /*naslov nad sliko*/
+  .naslov-slika{
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+   /*Opis pod slikami*/
+  .post-description{
+    font-size: 1.0rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+}
+
+  /*noga*/
+.noga{
+    position: fixed;
+    bottom: 0;
+    padding: 10px 15px;
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+}
+/*napis v nogi*/
+.noga h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 20px;
+
+}
