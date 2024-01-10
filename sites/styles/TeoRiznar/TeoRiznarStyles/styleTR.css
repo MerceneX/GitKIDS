@@ -1,0 +1,395 @@
+@font-face {
+  font-family: "FerroRosso";
+  src: url(/TeoRizanrSlike/Font/FerroRosso.ttf);
+}
+
+/* #region STYLES */
+@keyframes color {
+  0% {
+    background: #3b0900;
+  }
+  100% {
+    background: #000000;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+#bannerimage {
+  width: 100%;
+  background-image: url(/TeoRizanrSlike/hypercar.jpg);
+  height: 610px;
+  background-color: red;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+#bannertext {
+  position: relative;
+  color: white;
+  font-size: 40px;
+  height: 100%;
+  width: 100%;
+  border: solid 5px white;
+  border-radius: 10px;
+}
+#bannerheading {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: "FerroRosso";
+}
+
+#bannerquote {
+  font-size: 24px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.ozadje {
+  background: #ff2800; /* Fallback */
+  animation: color 5s infinite linear;
+  animation-direction: alternate;
+}
+.desno {
+  margin-left: auto;
+}
+
+.naslov {
+  position: relative;
+  margin-bottom: 40px !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.blog {
+  font-family: sans-serif !important;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 30px;
+}
+.naslov div {
+  position: absolute;
+  left: 50%;
+  top: 99%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: "Ferrari", sans-serif !important;
+  font-size: 40px;
+  border: solid 5px white;
+  border-radius: 10px;
+  margin-bottom: 0px !important;
+}
+
+p {
+  color: white;
+}
+
+.rdeca {
+  background-color: #ff2800 !important;
+}
+
+nav {
+  font-weight: bolder;
+  font-family: "Teko", sans-serif;
+}
+
+.gumb {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.gumb span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.gumb span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.gumb:hover span {
+  padding-right: 15px;
+}
+
+.gumb:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.about-us-header {
+  position: relative;
+  color: white;
+  font-size: 40px;
+  background-color: #3b0900;
+  text-align: center;
+}
+.about-us-header p {
+  border: solid 3px white;
+  border-radius: 10px;
+}
+.about-us-text {
+  color: white;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-us-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.about-us-img img {
+  border: solid 3px white;
+  border-radius: 10px;
+  width: 50%;
+}
+
+/* #endregion STYLES */
+
+/* #region GALLERY */
+.imagecont {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imagecont:hover .overlay {
+  opacity: 1;
+}
+
+.overlaytext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "FerroRosso";
+}
+
+.car-text {
+  font-weight: bolder;
+}
+/* #endregion GALLERY */
+
+/* #region FOOTER */
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: black;
+  margin-top: 5%;
+}
+
+.footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity: 0.8;
+}
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+/* #endregion FOOTER */
+
+/* #region NEWSLETTER */
+
+.newsletter {
+  margin: 20px;
+  width: 100%;
+  height: max-content;
+  position: relative;
+  text-align: center;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+}
+
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type="text"]:focus {
+  outline: none;
+}
+
+.form-container .btn {
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #000;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+/* #endregion NEWSLETTER */
+
+/* #region LOADING */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+/* #endregion LOADING */
+
+/* #region MEDIA */
+
+@media (max-width: 991px) {
+  #bannerheading {
+    font-size: 40px;
+  }
+
+  #bannerquote {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #bannerquote {
+    font-size: 17px;
+  }
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+/* #endregion MEDIA */
