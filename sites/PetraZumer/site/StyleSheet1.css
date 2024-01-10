@@ -1,0 +1,147 @@
+﻿body {
+    margin: 0px;
+}
+
+
+
+h1 {
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 250%;
+    text-align: center;
+    text-shadow: 2px 2px 5px Grey;
+
+}
+
+.header {
+    maring: 0px;
+    
+}
+
+.headingtable {
+    width: 100%;
+    background-color: #163020;
+    padding: 20px;
+    box-shadow: 10px 10px 5px Gray;
+}
+
+.heading {
+    font-size: 25px;
+    color: white;
+}
+
+.menu {
+    width: 8%;
+    text-align: center;
+    
+}
+
+.besedilo1 {
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+}
+h2 {
+    text-align: center;
+    margin-top: 65px;
+    font-family: 'Times New Roman';
+    text-shadow: 2px 2px 5px grey;
+    font-size: 35px;
+    color: #436060;
+}
+.drzave {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.imenadrzav {
+    text-align: center;
+
+}
+
+#dr {
+    width: 33%;
+    border: 2px solid;
+    background-color: #304D30;
+    color: white;
+    font-family: 'Times New Roman';
+    padding: 12px;
+    box-shadow: 10px 10px 5px Gray;
+}
+
+#op {
+    width: 33%;
+    padding: 23px;
+    text-align: justify;
+    vertical-align: top;
+    border: 3px solid #b6c4b6;
+    font-size: 15px;
+    box-shadow: 10px 10px 5px Gray;
+}
+
+#filipini {
+    width: 250px;
+    padding-top: 50px;
+}
+
+#japan {
+    width: 250px;
+    padding-top: 17px;
+}
+
+#egypt {
+    width: 250px;
+    padding-top: 50px;
+}
+
+.imageegypt {
+    text-align: center;
+
+}
+
+.imagejapan {
+    text-align: center;
+}
+
+.imagefilipini {
+    text-align: center;
+}
+
+
+.foot {
+    background-color: #163020;
+    color: white;
+    padding: 5px
+}
+
+.buttonreadmore {
+    margin-top: 10px;
+    text-align: right;
+}
+
+#readmorebutton {
+    background-color: white;
+    border: 2px solid #436060;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.glavnaslika {
+    background-image: url(../imegs/narava.jpg);
+    padding-bottom: 70px;
+    padding-top: 80px;
+}
+
+#worldpic {
+    width: 25px;
+    margin-right: 15px;
+    
+}

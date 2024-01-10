@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+   
+<html>
+    <head>
+       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="verona.css"> <!-- Link to your CSS file -->
+        <title>Verona</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+<nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <body>
+    <article>
+        <h1>Verona</h1>
+        <p>Verona je čudovito italijansko mesto z bogato zgodovino in čarobno arhitekturo.
+             Mesto je znano po dobro ohranjenih rimskih spomenikih, vključno z veličastno areno,
+             ter številnih srednjeveških znamenitostih.   </p> 
+             <img src= https://github.com/kristjanzoks/Slike-za-html/blob/main/thumbnail_1000006471.jpg?raw=true alt="Verona" width="278" height="300"> </article>
+        <article><h1> Zgodba o romeu in juliji </h1>
+        <p>  </p>
+        "Romeo in Julija" je ena najbolj znanih Shakespearovih tragedij, napisana okoli leta 1597. Zgodba sledi ljubezenski zgodbi med mladim Romeom Montaguejem in Julijo Capulet, člani dveh sovražnih družin v Veroni.
+              <br> <img src=https://github.com/kristjanzoks/Slike-za-html/blob/main/thumbnail_1000006489.jpg?raw=true alt="romanca" width="275" height="300"> </article>
+        <article><h1> Julijina hiša </h1>
+        <p> Julijina hiša je znamenitost v Veroni, Italija, povezana s Shakespearovo tragedijo "Romeo in Julija". Tradicionalno velja, da je to mesto, kjer je Julija zaslišala slavne besede Romea. Balkon je del stavbe Casa di Giulietta, ki privablja obiskovalce zaradi romantike in literarne zgodovine.  </p>
+<img src=https://github.com/kristjanzoks/Slike-za-html/blob/main/thumbnail_1000006484.jpg?raw=true alt="slastno" width="278" height="300" > </article>
+        <article> <h1>Julijin kip</h1>
+    <p>obstaja legenda, ki pravi, da če se dotaknete desne dojke Julijinega kipa,
+         vam bo to prineslo srečo v iskanju prave ljubezni (il vero amore); <p>
+          <img src=https://github.com/kristjanzoks/Slike-za-html/blob/main/thumbnail_1000006474.jpg?raw=true alt="nyehehehehe" width="278" height="300">  </article>
+    <article> <h1> Kdaj obiskati verono</h1>
+    <p> Najboljši čas za obisk Verone je od maja do oktobra,
+         saj je takrat največ kulturnih prireditev, pa tudi vreme je toplo in sončno.
+         če pa se želite izogniti gneči (la folla) na ulicah Verone, je primernejši čas za obisk zgodnja pomlad ali jesen. </p>
+ <img src=https://github.com/kristjanzoks/Slike-za-html/blob/main/thumbnail_1000006478.jpg?raw=true alt="Mozartove kroglice" width="278" height="300"> </article>
+
+        <!-- Load external JavaScript -->
+        <script src="scripts.js"></script>
+     
+     
+    </body>
+<footer>
+        <p>&copy; Posted on <time datetime="2023-12-12">October 14, 2023</time> by Laura Vernekar</p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.responsive-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('data-src');
+                const preview = document.createElement('div');
+                preview.className = 'image-preview';
+                preview.innerHTML = `<img src="${src}" alt="Image Preview">`;
+                document.body.appendChild(preview);
+
+                preview.addEventListener('click', () => {
+                    document.body.removeChild(preview);
+                });
+            });
+        });
+    </script>
+</html>
+
+
+
+
+

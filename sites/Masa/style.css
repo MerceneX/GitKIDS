@@ -1,0 +1,94 @@
+.glava
+{
+    background-image: url(slike/naslovna.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    align-items: center;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 30px;
+}
+
+.festival
+{
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 33px;
+    background-color: rgba(173, 48, 200, 0.7);
+}
+body
+{
+   
+  background-color: rgba(189, 189, 189, 0.2);
+
+}
+.bistvo
+{
+    background-color: white;
+    column-count: 2;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bistvo img
+{
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: 0 auto 60px;
+
+}
+.bistvo p
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+.bistvo h2
+{
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   
+}
+.gumb
+{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgba(192, 92, 241, 0.7);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+.gumbek
+{
+    text-align: center;
+}
+.gumb:active
+{
+color:blueviolet;
+}
+.noga
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.ime
+{
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.datum
+{
+    text-align: right;
+    margin-bottom: 40px;
+    margin-right: 30px;
+}

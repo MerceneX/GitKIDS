@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Link to your CSS file -->
+
+  
+    <title>Exploring Quantum Innovations</title>
+</head>
+
+<body>
+    <header>
+        <h1>Exploring Quantum Innovations</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <article>
+            <h2>The Founding and Early Years</h2>
+            <p>In 2010, Dr. Isabella Vega founded Quantum Innovations, uniting brilliant minds in quantum physics and
+                AI. Their flagship project, Quantum Nexus, blends quantum computing and artificial superintelligence.
+                Isabella's visionary leadership transformed the company's state-of-the-art headquarters into an
+                innovation hub. Quantum Innovations symbolizes a journey into uncharted territories, where science and
+                imagination converge to redefine human potential.</p>
+        </article>
+
+
+        <img src="../../images/kvas/name.png" alt="Image Description 3" class="responsive-image" data-src="../../images/kvas/name.png">
+
+        <article>
+            <h2>The Symbol of innovation</h2>
+            <p>At the heart of Quantum Innovations lies the Quantum Nexus, a groundbreaking fusion of quantum computing
+                and artificial superintelligence. This iconic project, spearheaded by visionary founder Dr. Isabella
+                Vega, symbolizes a paradigm shift in the realm of scientific exploration, where the unimaginable becomes
+                achievable, and the boundaries of what's possible are redefined. In the world of Quantum Innovations,
+                the Quantum Nexus stands as an iconic beacon, illuminating a path towards a future where the uncharted
+                territories of science unlock unprecedented potentials for humanity.</p>
+        </article>
+
+        <img src="../../images/kvas/compact-innovation.jpg" alt="Image Description 4" class="responsive-image"
+            data-src="../../images/kvas/innovation.jpg">
+        <article>
+            <h2>Breaking the limits of Technology</h2>
+            <p>Quantum Innovations has consistently pushed the limits of technology, achieving milestones that redefine
+                the boundaries of what is technologically possible:</p>
+            <p> <strong>1.</strong>Quantum Computing Prowess: Quantum Innovations stands at the forefront of quantum
+                computing, surpassing
+                traditional limitations by harnessing the power of quantum states to process information at
+                unprecedented speeds.</p>
+            <p> <strong>2.</strong>AetherAI Advancements: The development and integration of AetherAI, an artificial
+                superintelligence,
+                marks a groundbreaking achievement, enabling Quantum Innovations to tackle complex problems with
+                unparalleled computational efficiency.</p>
+        </article>
+        <img src="../../images/kvas/compact-limits.jpg" alt="Image Description 5" class="responsive-image"
+            data-src="../../images/kvas/limits.jpg">
+
+        <article>
+            <h2>Triumph over Ups and Downs</h2>
+            <p>Quantum Innovations has achieved resounding success by navigating challenges with resilience and
+                adaptability. The company's triumph over ups and downs is attributed to strategic decision-making, a
+                cohesive team culture, and a commitment to continuous learning. Quantum Innovations embraces setbacks as
+                opportunities for growth, fostering innovation through adversity. The company's global impact extends
+                beyond its own successes, contributing to the advancement of technology on a broader scale. In essence,
+                Quantum Innovations' ability to maintain its visionary goals, overcome obstacles, and inspire resilience
+                underscores its position as a pioneering force in the ever-evolving landscape of scientific exploration.
+            </p>
+        </article>
+
+        <img src="../../images/kvas/compact-meeting.jpg" alt="Image Description 6" class="responsive-image"
+            data-src="../../images/kvas/meeting.jpg">
+        <article>
+            <h2>The Motto</h2>
+            <p>"Unveiling Tomorrow, Today: Quantum Innovations — Where Curiosity Meets Creation."</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Posted on <time datetime="2023-12-12">December 12, 2023</time> by Tilen Kvas</p>
+    </footer>
+    <script>
+        const images = document.querySelectorAll('.responsive-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                const src = image.getAttribute('data-src');
+                const preview = document.createElement('div');
+                preview.className = 'image-preview';
+                preview.innerHTML = `<img src="${src}" alt="Image Preview">`;
+                document.body.appendChild(preview);
+
+                preview.addEventListener('click', () => {
+                    document.body.removeChild(preview);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4d739a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-title {
+    color: #f9c26f;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #81bb83;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.section {
+    padding: 20px;
+    width: 90%;
+    
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p1 {
+    color: rgb(61, 61, 86);
+    font-style: italic;
+
+
+}
+p2 {
+    font-style:italic;
+}
+
+p3{
+    font-style: italic;
+}
+
+p4{
+    font-style: italic;
+}
+
+img {
+    width: 5;
+    height: 50;
+    margin-bottom: 10px;
+    transition: transform 0.3s, cursor 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03); /* Scale the image on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

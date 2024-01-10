@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog-post {
+    margin: 20px;
+}
+
+.metadata {
+    font-style: italic;
+    color: #888;
+}
+
+/* Add rounded edges and cool shadows for images */
+.blog-post img {
+    border-radius: 15px; /* Adjust the value for the desired level of roundness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adjust the values for the desired shadow effect */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+}
