@@ -1,0 +1,126 @@
+/* Resetiranje privzetih slogov */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  /* Osnovni slogi */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+  
+header {
+    background-color: #4682B4;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    display: inline;
+    float: left;
+    margin-top: -15px;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+  
+nav ul {
+    list-style: none;
+    display: inline;
+    float: right;
+    margin-top: -10px;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+  
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+main {
+    padding: 20px;
+}
+  
+div {
+    margin: 0;
+    padding: 40px;
+    text-align: justify;
+}
+
+.liha {
+    background-color: #4682B4;
+    color: #f4f4f4;
+}
+  
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4682B4;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+
+#plx-0 {
+    background-image: url("../../images/ReneJelen/snow-3090087_1280.jpg");
+
+  /* Set a specific height */
+  min-height: 850px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#plx-1 {
+    background-image: url("../../images/ReneJelen/gora.jpg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#plx-2 {
+    background-image: url("../../images/ReneJelen/snowboarder.jpg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#plx-3 {
+    background-image: url("../../images/ReneJelen/boardi.jpg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
