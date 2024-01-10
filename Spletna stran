@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Taxi - Domov</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#intro {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+#vip-vozniki {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.black-friday {
+    background-color: red;
+    padding: 10px;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.drivers .driver {
+    display: inline-block;
+    margin: 10px;
+    background-color: #333;
+    color: yellow;
+    padding: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #696969
+}
+
+.footer-content img {
+    max-width: 100px;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.driver-image {
+    width: 400px;  /* Širina slike */
+    height: 300px; /* Višina slike */
+    object-fit: cover; 
+}
+
+</style>
+<body>
+    <header>
+        <img src="logo.png" alt="Real Taxi Logo">
+        <nav>
+            <ul>
+                <li><a href="#cenik">Cenik</a></li>
+                <li><a href="#onas">O nas</a></li>
+                <li><a href="#storitve">Naše storitve</a></li>
+                <li><a href="#pritožbe">Pritožbe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h1>Preprosto naročite taksi</h1>
+        <p>Imamo najbolj kvalificirane delavce s cele Republike Congo, vsi so naredili vozniški izpit vsaj v drugem poizkusu. Še nikoli policisko obravnavani vozniki. .</p>
+        <p>Za normalno izkušnjo Pokličite <b>08 9952 9999</b></p>
+    </section>
+
+    <section id="vip-vozniki">
+        <h2>VIP VOZNIKI</h2>
+        <div class="black-friday">
+            <img src="black-firday.png" alt="black-friday"  >
+            <p><b>POKLIČITE ZA INSANE DEAL 09722 8888</b></p>
+        </div>
+        <div class="drivers">
+            <div class="driver">
+                <img src="driver1.jpg" alt="TAXI 34" class="driver-image" >
+                <p>JANEZ, 34</p>
+                <p>Strokovnjak za avto in odličen smisel za humor</p>
+            </div>
+            <div class="drivers">
+            <!-- Ponovite ta del za vsakega voznika -->
+            <div class="driver">
+                <img src="driver2.jpg" alt="TAXI 34" class="driver-image" >
+                <p>Bogdan, 24</p>
+                <p>Mlad, a pravi demon za volanom</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="footer-logo.png" alt="Real Taxi Logo">
+            <div class="contact-info">
+                <h3>Kontakt</h3>
+                <p>Lokacija: Tržaška cesta 3D</p>
+                <p>Tel: 123 456 789</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
