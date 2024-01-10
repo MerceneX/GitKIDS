@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimDvor Mercedes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; 
+        }
+
+        nav {
+            background-color: #333; 
+            color: #fff; 
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px; 
+            line-height: 1.6;
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333; 
+        }
+
+        p {
+            color: #555; 
+        }
+
+        a {
+            color: #007bff; 
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333; 
+            color: #fff;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center; 
+        }
+
+        footer p {
+            margin: 0; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Glavni meni -->
+    <nav>
+       <ul>
+           <li><a href="../../index.html">Domov</a></li>
+                <li><a href="../about.html">O Nas</a></li>
+                <li><a href="../contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Vsebina strani -->
+    <main>
+        <!-- Prvi članek -->
+        <article>
+            <h2>Najnovejši Modeli Mercedes-Benz: Vrhunsko Udobje in Prestiž</h2>
+            <p>Mercedes-Benz je predstavil svoje najnovejše modele, ki postavljajo nove standarde v udobju, varnosti in tehnologiji. Ta luksuzna vozila so opremljena z najnovejšimi funkcijami, ki zagotavljajo neverjetno voznikovo izkušnjo.</p>
+            <p><img src='https://cdn.jdpower.com/JDPA_2021%20Mercedes-Benz%20S-Class%20Black%20At%20Speed.jpg' height='700' width='700' alt='Mercedes-Benz'></p>
+        </article>
+
+        <!-- Drugi članek -->
+        <article>
+            <h2>Mercedes-AMG: Moč in Eleganca na Cesti</h2>
+            <p>Mercedes-AMG modeli predstavljajo vrhunec zmogljivosti in eleganci. Z njihovimi zmogljivimi motorji in športnimi značilnostmi so namenjeni ljubiteljem adrenalina. Spoznajte vrsto vozil, ki združujejo moč in eleganco na cesti.</p>
+            <p><img src='https://hips.hearstapps.com/hmg-prod/images/2024-mercedes-amg-c63-s-e-performance-front-motion5-1663695513.jpg?crop=0.710xw:0.798xh;0.129xw,0.141xh&resize=768:*' height='700' width='700' alt='Mercedes-AMG'></p>
+        </article>
+
+        <!-- Tretji članek -->
+        <article>
+            <h2>Električni Mercedes: Prihodnost Vozniške Izkušnje</h2>
+            <p>Mercedes se usmerja v prihodnost z inovativnimi električnimi modeli. Z naprednimi tehnologijami za trajnostno vožnjo in elegantnim dizajnom postavljajo nove mejnike v svetu električnih avtomobilov. Odkrijte, kaj prinaša električna prihodnost za Mercedes-Benz.</p>
+            <p><img src='https://static.independent.co.uk/2022/04/14/10/electric%20mercedes%20range.jpg' height='700' width='700' alt='Električni Mercedes'></p>
+        </article>
+    </main>
+
+    <!-- Noga strani -->
+    <footer>
+        <p>&copy; <span id="datum"></span> Primož Dvoršak </p>
+    </footer>
+
+    <!-- JavaScript za vstavljanje datuma v nogo strani -->
+    <script>
+        document.getElementById("datum").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
