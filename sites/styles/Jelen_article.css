@@ -74,7 +74,7 @@ footer {
 }
 
 #plx-0 {
-    background-image: url("snow-3090087_1280.jpg");
+    background-image: url("../../images/ReneJelen/snow-3090087_1280.jpg");
 
   /* Set a specific height */
   min-height: 850px;
@@ -87,7 +87,7 @@ footer {
 }
 
 #plx-1 {
-    background-image: url("gora.jpg");
+    background-image: url("../../images/ReneJelen/gora.jpg");
 
   /* Set a specific height */
   min-height: 600px;
@@ -100,7 +100,7 @@ footer {
 }
 
 #plx-2 {
-    background-image: url("snowboarder.jpg");
+    background-image: url("../../images/ReneJelen/snowboarder.jpg");
 
   /* Set a specific height */
   min-height: 600px;
@@ -113,7 +113,7 @@ footer {
 }
 
 #plx-3 {
-    background-image: url("boardi.jpg");
+    background-image: url("../../images/ReneJelen/boardi.jpg");
 
   /* Set a specific height */
   min-height: 600px;
