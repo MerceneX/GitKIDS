@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My BMW Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #999393; /* Svetlo siva barva ozadja */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        p {
+            margin: 15px;
+            font-weight: 500;
+        }
+
+        h1 {
+            color: #c0d104;
+            font-family: 'Stencil Std', fantasy;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        article {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #c0d104;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Dodano za šahovnico */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0;
+            text-align: left;
+            border: none;
+            background-color: #999393;
+            
+        }
+
+        /* Postavitev šahovnice */
+        .even-row {
+            background-color: #999393;
+        }
+
+        /* Odstranjeno polje okoli slike */
+        .image-cell {
+            border: 2px solid #c0d104;
+        }
+
+        /* Dodano za slike */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        /* Dodano za naslove v besedilu */
+        h2, h3 {
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            background-color: #c0d104;
+            font-family: 'Stencil Std', fantasy;
+            font-weight: normal;
+        }
+
+        /* Dodano za obseg naslova */
+        h2.full-width, h3.full-width {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Dodano za ozadje celotnega naslova */
+        h2.full-width, h3.full-width {
+            background-color: #c0d104;
+        }
+        
+        /* Dodano za okvirje s slikami */
+        .right-border {
+            border-right: 15px solid #c0d104;
+        }
+
+        .left-border {
+            border-left: 15px solid #c0d104;
+        }
+        /* Dodano za zunanje okvirje slike */
+        .table1 .image-cell {
+            border-left: 0px solid #c0d104; /* Desna stran */
+        }
+
+        .table2 .image-cell {
+            border-right: 0px solid #c0d104; /* Leva stran */
+        }
+
+        .table3 .image-cell {
+            border-left: 0px solid #c0d104; /* Desna stran */
+        }
+
+        /* Dodano za spremembo fonta in debeline besedila */
+        .table1 p:first-child,
+        .table2 p:first-child,
+        .table3 p:first-child {
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My BMW Blog</h1>
+        <nav>
+    <ul>
+        <li><a href="../../index.html">Glavna stran</a></li>
+            <li><a href="../about.html">O nas</a></li>
+            <li><a href="../contact.html">Kontakt</a></li>
+       
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        <!-- Vsebina bloga gre tukaj -->
+        <article>
+            <h2 class="full-width">BMW Series</h2>
+
+            <!-- Dodano za šahovnico -->
+            <table class="table1">
+                <tr class="even-row">
+                    <td class="image-cell right-border"><img src="https://www.topgear.com/sites/default/files/2022/09/1-BMW-3-Series.jpg"
+                            alt="BMW Series 1"></td>
+                    <td>
+                        <p>BMW produces various series of vehicles, each catering to different needs and preferences. Let's take
+                            a closer look at some of the key series:</p>
+                        <p>My BMW 318i is a proud member of the BMW Series 1 to 8, offering a diverse range of vehicles, from compact cars to luxurious models. Each series boasts distinctive characteristics, a variety of engine options, and exceptional performance. Take the BMW Series 1, for instance, celebrated for its nimble handling and efficiency, making it an ideal choice for urban driving.
+
+When you explore the official BMW website, you'll discover in-depth information about each model, encompassing specifications, features, and customization options. Whether your interest lies in the compact and agile BMW 1 Series or the opulent and powerful BMW 8 Series, the website provides a comprehensive overview to assist you in making an informed decision.</p>
+                        <p>Explore the BMW Series on the <a href="https://www.bmw.si/sl/models.html">official BMW
+                                website</a>.</p>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Dodano za obseg naslova -->
+            <h3 class="full-width left-border">BMW SUVs (X1 to X7)</h3>
+            <table class="table2">
+                <tr>
+                    <td class="right-border">
+                        <p>Explore the world of BMW SUVs on the official BMW
+                                website. The lineup includes the compact and dynamic X1, the versatile and spacious X3,
+                            and the sophisticated and powerful X5, among others. Each BMW SUV is designed with precision
+                            engineering and cutting-edge technology to deliver a seamless blend of performance and
+                            comfort.</p>
+                        <p>The spotlight is on the BMW X5, a true embodiment of luxury and versatility. This SUV not only
+                            exudes elegance in its design but also offers ample space for both passengers and luggage, making
+                            it an ideal choice for families and those with a taste for refinement. With advanced features and
+                            intuitive technology, the BMW X5 ensures a superior driving experience.</p>
+                        <p>Visit the official BMW SUV page to explore the
+                            complete range and discover the SUV that aligns with your preferences. From urban adventures to
+                            off-road excursions, BMW SUVs redefine the boundaries of performance and comfort. Elevate your
+                            driving experience with BMW, where every journey is an exploration of luxury and
+                            capability..</p>
+                        <p>Learn more about BMW SUVs on the <a href="https://www.bmw.si/sl/bmw-suv.html">official BMW
+                                website</a>.</p>
+                    </td>
+                    <td class="even-row image-cell left-border"><img
+                            src="https://www.bmw.si/content/dam/bmw/common/all-models/x-series/series-overview/bmw-x-series-overview-page-ms-x3-03.jpg"
+                            alt="BMW X5"></td>
+                </tr>
+            </table>
+
+            <!-- Dodano za obseg naslova -->
+            <h3 class="full-width right-border">BMW Sports Models (M2 to M8)</h3>
+            <table class="table3">
+                <tr class="even-row">
+                    <td class="image-cell right-border"><img
+                            src="https://autoline.si/img/s/vozilo-coupe-BMW-M6-GRAN-COUPE-COMPETITION-700-HP---1687297422703072918_big--23042808213895000800.jpg"
+                            alt="BMW Sports Models"></td>
+                    <td>
+                        <p>The BMW M series encompasses high-performance sports models designed for an exceptional driving
+                            experience. Models from M2 to M8 offer impressive speeds, aggressive design, and top-notch driving
+                            dynamics. The BMW M4, known for its powerful engine and precision handling, is a favorite among
+                            driving enthusiasts.<p>Immerse yourself in the world of high-performance driving with the BMW M
+                                series. From the dynamic M2 to the powerful M8, each model is meticulously crafted to offer
+                                unparalleled speeds, aggressive design, and top-notch driving dynamics. Whether you crave the
+                                adrenaline rush of the track or the thrill of the open road, the BMW M series delivers an
+                                exceptional driving experience.</p>
+                        <p>One standout in the M series is the BMW M4, celebrated for its powerful engine and precision
+                            handling. This sports model captures the essence of driving enthusiasts with its exhilarating
+                            performance and unmistakable style. The BMW M4 is a symbol of the brand's commitment to pushing the
+                            boundaries of performance and redefining the driving experience.</p>
+                        <p>Explore the entire BMW M series and delve into the details of each model on the. Uncover the
+                            innovation, craftsmanship, and sheer power that make the M series a benchmark in the world of
+                            high-performance sports cars. Join the league of driving enthusiasts who appreciate the art of
+                            driving with the BMW M series.</p>
+                        <p>Discover more about BMW Sports Models on the <a
+                                href="https://www.bmw.si/sl/why-bmw/m-models.html">official BMW website</a>.</p>
+                    </td>
+                </tr>
+            </table>
+        </article>
+
+        <!-- Dodajte več prispevkov po potrebi -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023-12-13 Date - Luka Forstnerič</p>
+    </footer>
+
+</body>
+
+</html>
