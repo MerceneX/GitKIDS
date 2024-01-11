@@ -1,0 +1,155 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    background-color: #333;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply CSS Grid to the article layout */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+main.about {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply CSS Grid to the article layout */
+main.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+article {
+    padding: 20px;
+    border: 1px solid #ddd;
+	background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+time {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Responsive image styling */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* Image preview styles */
+.image-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.image-preview img {
+    max-width: 80%;
+    max-height: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for the "Read More" links */
+/* Add your existing CSS styles above */
+
+/* Style for the "Read More" links in Material Design style */
+.read-more {
+    text-decoration: none;
+    color: #2196F3;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #2196F3;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #2196F3;
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Center the "Read More" links */
+.read-more-container {
+    text-align: center;
+}
+
+/* Adjust link spacing */
+article {
+    margin-bottom: 20px;
+}
+
+/* Media query to adjust link width on smaller screens */
+@media (max-width: 768px) {
+    .read-more {
+        width: 94%;
+    }
+}
+
+
+

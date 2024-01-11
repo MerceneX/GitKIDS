@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root[data-theme="light"] {
+  --text: #080e0d;
+  --background: #f4f9f9;
+  --primary: #5ca4a3;
+  --secondary: #a3b4cb;
+  --accent: #808db8;
+}
+:root[data-theme="dark"] {
+  --text: #f2f8f7;
+  --background: #050a0a;
+  --primary: #5ca3a2;
+  --secondary: #33455b;
+  --accent: #48557f;
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  /* font-size: medium; */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background);
+  /* display: flex; */
+}
+
+
+.nav-bar {
+  display: flex;
+  color: var(--text);
+  background-color: var(--secondary);
+  flex-grow: 1;
+  
+}
+
+.nav-bar-list {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  padding-left: 8rem;
+  
+}
+
+.nav-bar-list > li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 2rem;
+}
+
+
+input {
+  padding: 1rem;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--text);
+  text-transform: uppercase;
+}
+
+
+.contact-card {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  border-radius: 40px;
+  border: var(--primary) 1px;
+}
+
+.me {
+  margin: 2rem;
+  width: 20rem;
+  border-radius: 50px;
+}
+
+.contact-info {
+  margin: 2rem;
+  float: left;
+}
+
+.contact-info > p {
+  margin-top: 5rem;
+  float: left;
+}
+
+.contact-info > p > a{
+  text-decoration: underline;
+}

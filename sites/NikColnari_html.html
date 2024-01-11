@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Moj Blog</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #555;
+    padding: 0.5em;
+    text-align: center; /* Dodajte poravnavo na sredino */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+main {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "text image"; 
+    grid-gap: 20px;
+}
+
+.image-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+}
+
+.image {
+    grid-area: image;
+}
+
+.text {
+    grid-area: text;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.text {
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    
+    
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Najboljši dreamworks animirani filmi</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Domov</a>
+        <a href="about.html">O Nas</a>
+        <a href="contact.html">Kontakt</a>
+    </nav>
+
+    <main>
+        <section class="image-section">
+            <div class="image">
+                <img src="../images/NikColnaric/slika1.jpg" alt="Opis slike 1">
+            </div>
+            <div class="text">
+            <h2>Kako izuriti svojega zmaja</h2>
+            <p>
+                Film "Kako izuriti svojega zmaja" je animirana pustolovščina, kjer nerodni Viking Hikup sprijatelji redkega zmaja. Namesto da bi ga ubil, Hikup uči svojo skupnost o pozitivnih vidikih sobivanja z zmaji. Film je znan po čustveni zgodbi, lepi animaciji ter sporočilih o razumevanju in prijateljstvu med različnimi bitji..</p>
+            </div>
+        </section>
+
+        <section class="image-section">
+            <div class="image">
+                <img src="../images/NikColnaric/slika2.jpg" alt="Opis slike 2">
+            </div>
+            <div class="text">
+            <h2>Shrek</h2>
+            <p>
+                "Shrek" je animirani film iz leta 2001, ki sledi zelenemu ogru Shreku, ki ga glas posoja Mike Myers. Shrek živi osamljen življenje v močvirju, vendar se znajde v epski pustolovščini, ko mora rešiti svoj dom pred invazijo pravljičnih likov, ki jih je pregnal zlobni Lord Farquaad. Na svoji poti Shrek sreča osla Donkeyja (glas Eddieja Murphyja) in princeso Fiono (glas Cameron Diaz), s katero se zaplete v smešno in čustveno zgodbo. Film se ponaša z duhovitim humorjem, parodijami na pravljične zgodbe in nekonvencionalnim pristopom k žanru pravljice.</p>
+            </div>
+        </section>
+
+        <section class="image-section">
+            <div class="image">
+                <img src="../images/NikColnaric/slika3.jpg" alt="Opis slike 3">
+            </div>
+            <div class="text">
+            <h2>Kung fu panda</h2>
+            <p>"Kung Fu Panda" je animirani film iz leta 2008, ki sledi nespretnemu in debelu pandi po imenu Po, ki sanja o tem, da postane mojster kung fuja. Po se znajde v nepričakovani vlogi junaka, ko se izkaže, da je izbrani bojevnik za rešitev svojega mesta pred zlobnim snežnim leopardom Tai Lungom. S pomočjo skupine modrih in izkušenih živali učiteljev kung fuja Po odkrije svoj notranji potencial in se spopade s svojimi dvomi. Film združuje akcijo, humor in sporočilo o samopodobi.</p>
+            </div>
+        </section>
+
+        <section class="image-section">
+            <div class="image">
+                <img src="../images/NikColnaric/slika4.jpg" alt="Opis slike 4">
+            </div>
+            <div class="text">
+            <h2>Rise of the Guardians</h2>
+            <p>"Rise of the Guardians" (2012) je animirani film, v katerem se ikoni otroških sanj, kot so Božiček, Zobna vila, Zmaj in Pesem (Božična miška), združijo, da bi se borili proti temi, ki jo širi zlobni Boogeyman. Skupaj skušajo zaščititi otroške sanje in vero v čudeže. Film združuje magično pustolovščino z liki iz priljubljenih otroških mitov.</p>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        &copy; 2023 Nik Colnarič
+    </footer>
+
+</body>
+</html>

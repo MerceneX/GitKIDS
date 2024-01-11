@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.glava{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,165,0,0.4),rgba(255,165,0,0.4)), url('ozadje3.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+  
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img
+{
+width: 400px;
+}
+
+.navigacija{
+    flex: 1;
+    text-align: right;
+}
+
+.navigacija ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navigacija ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.navigacija ul li ::after{
+content: '';
+width: 0%;
+height: 2px;
+background: red;
+display: block;
+margin: auto;
+transition: 0.6s;
+}
+
+.navigacija ul li :hover::after{
+width: 100%;
+}
+
+.textbox{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textbox h1{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    font-variant: small-caps ;
+}
+
+.textbox p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0 40px;
+}
+
+.gumbVec{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 4px solid red;
+    padding: 12px 34px;
+    font-size: 25px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.gumbVec:hover{
+    border: 4px solid red;
+    background-color: red;
+    transition: 1s;
+    color:white;
+}
+
+@media(max-width:700px){
+    nav img
+    {
+        width: 150px;
+    }
+    .textbox h1{
+        font-size: 25px;
+    }
+    .navigacija ul li{
+        display: block;
+    }
+    .navigacija{ 
+        position: absolute;
+        background: transparent;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: right;
+        z-index: 2;
+    }
+    
+}
+
+
+
+.storitve{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+ .storitve h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: red;
+    font-variant: small-caps;
+}
+ .storitve p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0 40px;
+   
+}
+.vrsta{
+     margin-top: 5%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.vrsta h2{
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: orange;
+    font-variant: small-caps;
+}
+.vrsta p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0 40px;
+}
+.vrstica{
+    flex-basis: 31%;
+    background: linear-gradient(rgba(255,165,0,0.4),rgba(255,165,0,0.4));
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+@media(max-width: 700px){
+    .vrsta{
+        flex-direction: column;
+    }
+}
+
+
+.Lokacija{
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.Lokacija h1{
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 40px;
+
+}
+
+
+
+.MnenjaUporabnikov{
+width: 80%;
+margin: auto;
+padding-top: 100px;
+text-align: center;
+}
+.MnenjaUporabnikov h1{
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 40px;
+    color: red;
+}
+.MnenjaStolpec{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background:linear-gradient(rgba(255,165,0,0.4),rgba(255,165,0,0.4));
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.MnenjaStolpec img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+
+}
+@media(max-whith:700px){
+    .MnenjaStolpec img{    
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+
+.noga{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.noga h3{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+
+}
+
+
+/*------------------------------------ O NAS CSS -------------*/
+
+.SekondarnaGlava{
+    height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(255,165,0,0.4),rgba(255,165,0,0.4)), url(ozadje3.jpg);
+    background-position:center ;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.SekondarnaGlava h1{
+    margin-top: 100px;
+    font-size: 60px;
+    color: red;
+    font-family: sans-serif;
+    font-variant: small-caps;
+}
+
+.O_Nas_Vsebina{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.O_Nas_Vsebina h1{
+    text-align: center;
+    color: red;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 40px;
+}
+.O_Nas_Vsebina p {
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 25px;
+}
+.Stolpec_Onas{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    
+}
+.Stolpec_Onas img{
+    width: 100%;
+    
+}
+
+/* --------------------------------- KONTAKT CSS --------------------- */
+
+.Kontakt{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.Kontakt h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: red;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.stolpec{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.stolpec div{
+    display: flex;
+    align-items: right;
+    margin-bottom: 40px;
+}
+.Kontakt p{
+    padding: 0;
+    font-family: sans-serif;
+}
+.stolpec input, .stolpec textarea{
+    width: 100%;
+    padding: 15px; 
+    margin-bottom: 20px ;
+    outline: none;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------ LOG IN  test ------------------*/
+
+.prijava{
+    height: 70%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+   
+
+}
+
+.obrazec{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    border: 4px solid orange;
+    overflow: hidden;
+    
+}
+
+.button_box{
+    width: 250px;
+     margin: 35px auto;
+     position: relative;
+     box-shadow: 0 0 20px 9px orange;
+     border-radius: 30px;
+
+}
+
+.preklopni_gumb{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+
+}
+
+#gumb{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(rgba(255,165,0,0.4),rgba(255,165,0,0.4));
+    border-radius: 30px;
+    transition: .5s;
+}
+.podatki{
+    top:180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+.input1{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid orange;
+    outline: none;
+    background: transparent;
+}
+.potrdi{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(rgba(255,165,0,0.4),rgba(255,165,0,0.4)) ;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+}
+#Prijava{
+    left: 50px;
+
+}
+#Registracija{
+    left: 450px;
+}
+
+/* ------------------------------ NADZORNA PLOŠČA -----------------------*/ 
+
+
+   
+/* ------------------------- LOG IN - funkcionalno ---------- */
+
+.login{
+    
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+   
+    
+}
+
+.form{
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid orange;
+}
+
+.signup{
+    
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.form_item{
+    margin: 5px;
+    font-family: sans-serif;
+}
+
+.gumb_login{
+    margin: 5px;
+    font-family: sans-serif;
+}
