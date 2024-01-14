@@ -92,3 +92,7 @@ color:blueviolet;
     margin-bottom: 40px;
     margin-right: 30px;
 }
+.povezava{
+    color: white !important; 
+    text-decoration: none !important;
+}
