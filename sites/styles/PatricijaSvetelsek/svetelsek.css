@@ -67,6 +67,7 @@ article {
     padding: 20px;
     border: 1px solid #ddd;
 	background-color: #f4f4f4;
+    box-shadow: 0 8px 16px rgba(100, 100, 255, 0.1), 0 -8px 16px rgba(255, 100, 150, 0.1);
 }
 
 h2 {
@@ -115,9 +116,6 @@ footer {
 }
 
 /* Style for the "Read More" links */
-/* Add your existing CSS styles above */
-
-/* Style for the "Read More" links in Material Design style */
 .read-more {
     text-decoration: none;
     color: #2196F3;
